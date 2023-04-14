@@ -1,8 +1,8 @@
 from django.contrib import admin
 
-from core.models import Category
-from core.models import User
-
+from core.models import Category, Feeling, User
 
 admin.site.register(Category)
+admin.site.register(Feeling)
 admin.site.register(User)
+
