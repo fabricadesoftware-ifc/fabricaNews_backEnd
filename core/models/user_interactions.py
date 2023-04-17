@@ -1,11 +1,11 @@
 from django.db import models
 from .user import User
-# from .project import Project
+from .project import Project
 
 
 class UserInteractions(models.Model):
     user = models.ForeignKey(User, on_delete=models.PROTECT, related_name='UserInteractions')
-    # project = models.ForeignKey(Project, on_delete=models.PROTECT, related_name='UserInteractions')
+    project = models.ForeignKey(Project, on_delete=models.PROTECT, related_name='UserInteractions')
     interaction_type = models.CharField(max_length=20, null=False, blank=False)
     interaction_time = models.DateTimeField(auto_now_add=True, null=False, blank=False)
     has_notification = models.BooleanField(default=False, null=False, blank=False)
