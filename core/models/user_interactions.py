@@ -1,12 +1,10 @@
 from django.db import models
 from .user import User
-from .category import Category
 # from .project import Project
 
 
 class UserInteractions(models.Model):
     user = models.ForeignKey(User, on_delete=models.PROTECT, related_name='UserInteractions')
-    category = models.ForeignKey(Category, on_delete=models.PROTECT, related_name='UserInteractions')
     # project = models.ForeignKey(Project, on_delete=models.PROTECT, related_name='UserInteractions')
     interaction_type = models.CharField(max_length=20, null=False, blank=False)
     interaction_time = models.DateTimeField(auto_now_add=True, null=False, blank=False)
