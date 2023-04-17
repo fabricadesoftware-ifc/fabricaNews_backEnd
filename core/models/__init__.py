@@ -5,3 +5,4 @@ from .comments import Comments
 from .news import News
 from .user_interactions import UserInteractions
 from .news_feel import NewsFeel
+from .save_to_read import Save_to_read
