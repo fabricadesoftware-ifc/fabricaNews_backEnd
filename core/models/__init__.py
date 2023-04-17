@@ -4,3 +4,4 @@ from .user import User
 from .news_feel import NewsFeel
 # from .news import News
 from .comments import Comments
+from .project import Project
