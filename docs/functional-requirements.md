@@ -1,6 +1,6 @@
 # Requisitos Funcionais
 
-OBS: em atualização
+### `User`
 
 - RF001 - O sistema deve permitir que usuários se cadastrem no site, fornecendo e-mail, nome e senha.
 - RF002 - O sistema deve validar a senha fornecida deve ser validada de acordo com os critérios mínimo de segurança.
@@ -22,3 +22,8 @@ OBS: em atualização
 - RF018 - O sistema deve exibir uma mensagem de confirmação para os usuários antes de excluir suas contas.
 - RF019 - O sistema deve permitir que usuários forneçam feedback sobre experiências de uso e funcionalidades disponíveis.
 - RF020 - o sistema deve exibir uma visualização de lista de seus conteúdos “favoritos” e “marcados para ler mais tarde”.
+
+### `News`
+
+- RF00X
+- RF00Y

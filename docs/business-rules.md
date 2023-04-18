@@ -1,5 +1,6 @@
 # Regras de Negócios
 
+### `User`
 - RN001 - Os usuários precisam se cadastrar no site para poderem interagir com as notícias, assim como deixar comentários ou avaliar o conteúdo.
 - RN002 - Todos os usuários devem concordar com os termos de uso do site antes de criar uma conta e utilizar nossos serviços. Isso inclui concordar com nossa política de privacidade e regras de conduta do site.
 - RN003 - As senhas dos usuários devem seguir critérios mínimos de segurança para proteger as contas dos usuários. A senha deve ter no mínimo 8 caracteres, incluindo pelo menos uma letra maiúscula, uma letra minúscula, um número e um caractere especial. As senhas não devem conter informações pessoais óbvias, como nome, sobrenome ou data de nascimento do usuário.
@@ -18,3 +19,8 @@
 - RN014 - Os usuários podem optar por excluir sua conta a qualquer momento, o que resultará na remoção de todas as informações e contribuições associadas à conta.
 - RN015 - Os usuários não podem criar contas falsas ou usar informações falsas em seus perfis.
 - RN016 - Os usuários não podem postar conteúdo protegido por direitos autorais ou plagiar conteúdos de outras fontes.
+
+### `News`
+
+- RN00X
+- RN00Y
