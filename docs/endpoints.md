@@ -1,12 +1,12 @@
 # Endpoints
 
-### /category
-- **[GET]** http://localhost:8000/categories/ - retorna todas as categorias registradas.
-- **[GET]** http://localhost:8000/categories/{id}/ - retorna os detalhes de uma categoria específica.
-- **[POST]** http://localhost:8000/categories/ - cria uma nova categoria.
-- **[PUT]** http://localhost:8000/categories/{id}/ - atualiza as informações de uma categoria específica.
-- **[PATCH]** http://localhost:8000/categories/{id}/ - atualiza parcialmente as informações de uma categoria específica.
-- **[DELETE]** http://localhost:8000/categories/{id}/ - remove uma categoria específica.
+### `/categories`
+- **[GET]** http://localhost:8000/categories/ - lista todos os registros de `categories`.
+- **[GET]** http://localhost:8000/categories/{id}/ - lista um registro específico de `categories`.
+- **[POST]** http://localhost:8000/categories/ - cria um novo registro em `categories`.
+- **[PUT]** http://localhost:8000/categories/{id}/ - altera um registro existente de `categories`.
+- **[PATCH]** http://localhost:8000/categories/{id}/ - altera parcialmente um registro existente de `categories`.
+- **[DELETE]** http://localhost:8000/categories/{id}/ - remove um registro de `categories`.
 
 ### /user
 - **[GET]** http://localhost:8000/users/ - retorna todos os usuários registrados.
