@@ -1,0 +1,1 @@
+from .newsfeel import NewsFeelSerializer
