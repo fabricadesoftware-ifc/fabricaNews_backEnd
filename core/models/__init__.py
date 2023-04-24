@@ -1,7 +1,12 @@
 from .category import Category
 from .feeling import Feeling
 from .user import User
+from .news import News
 from .news_feel import NewsFeel
-# from .news import News
+from .news import News
 from .comments import Comments
 from .project import Project
+from .user_interactions import UserInteractions
+from .favorites import Favorites
+from .save_to_read import Save_to_read
+from .user_project_follow import UserProjectFollow
