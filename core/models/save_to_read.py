@@ -2,7 +2,6 @@ from django.db import models
 from .user import User
 from .news import News
 
-
-class Save_to_read(models.model):
+class Save_to_read(models.Model):
     user = models.ForeignKey(User, on_delete=models.PROTECT, related_name='save_to_reads')
     news = models.ForeignKey(News, on_delete=models.PROTECT, related_name='save_to_reads')

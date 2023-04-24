@@ -2,7 +2,7 @@ from django.db import models
 from .user import User
 
 
-class Project(model.models):
+class Project(models.Model):
     title = models.CharField(max_length=100, null=False, blank=False)
     user = models.ForeignKey(
         User, on_delete=models.PROTECT, related_name="projects"
