@@ -11,7 +11,7 @@
 ### `/user`
 - **[GET]** http://localhost:8000/users/ - lista todos os registros de `users`.
 - **[GET]** http://localhost:8000/users/{users_id}/ - lista um registro específico de `users`.
-- **[POST]** http://localhost:8000/users/add - cria um novo registro em `users`.
+- **[POST]** http://localhost:8000/users/ - cria um novo registro em `users`.
 - **[PUT]** http://localhost:8000/users/{users_id}/ - altera um registro existente de `users`.
 - **[PATCH]** http://localhost:8000/users/{users_id}/ - altera parcialmente um registro existente de `users`.
 - **[DELETE]** http://localhost:8000/users/{users_id}/ - remove um registro de `users`.
