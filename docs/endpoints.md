@@ -2,76 +2,58 @@
 
 ### `/categories`
 - **[GET]** http://localhost:8000/categories/ - lista todos os registros de `categories`.
-- **[GET]** http://localhost:8000/categories/{id}/ - lista um registro específico de `categories`.
-- **[POST]** http://localhost:8000/categories/ - cria um novo registro em `categories`.
-- **[PUT]** http://localhost:8000/categories/{id}/ - altera um registro existente de `categories`.
-- **[PATCH]** http://localhost:8000/categories/{id}/ - altera parcialmente um registro existente de `categories`.
-- **[DELETE]** http://localhost:8000/categories/{id}/ - remove um registro de `categories`.
+- **[GET]** http://localhost:8000/categories/{categories_id}/ - lista um registro específico de `categories`.
+- **[POST]** http://localhost:8000/categories/add - cria um novo registro em `categories`.
+- **[PUT]** http://localhost:8000/categories/{categories_id}/ - altera um registro existente de `categories`.
+- **[PATCH]** http://localhost:8000/categories/{categories_id}/ - altera parcialmente um registro existente de `categories`.
+- **[DELETE]** http://localhost:8000/categories/{categories_id}/ - remove um registro de `categories`.
 
-### /user
-- **[GET]** http://localhost:8000/users/ - retorna todos os usuários registrados.
-- **[GET]** http://localhost:8000/users/{id}/ - retorna os detalhes de um usuário específico.
-- **[POST]** http://localhost:8000/users/ - cria um novo usuário
-- **[PUT]** http://localhost:8000/users/{id}/ - atualiza as informações de um usuário específico.
-- **[PATCH]** http://localhost:8000/users/{id}/ - atualiza parcialmente as informações de um usuário específico.
-- **[DELETE]** http://localhost:8000/users/{id}/ - remove um usuário específico.
+### `/user`
+- **[GET]** http://localhost:8000/users/ - lista todos os registros de `users`.
+- **[GET]** http://localhost:8000/users/{users_id}/ - lista um registro específico de `users`.
+- **[POST]** http://localhost:8000/users/add - cria um novo registro em `users`.
+- **[PUT]** http://localhost:8000/users/{users_id}/ - altera um registro existente de `users`.
+- **[PATCH]** http://localhost:8000/users/{users_id}/ - altera parcialmente um registro existente de `users`.
+- **[DELETE]** http://localhost:8000/users/{users_id}/ - remove um registro de `users`.
 
-### /newsfeel
-- **[GET]** http://localhost:8000/newsfeel/ - retorna todas as entradas registradas.
-- **[GET]** http://localhost:8000/newsfeel/{id}/ - retorna os detalhes de uma entrada específica.
-- **[POST]** http://localhost:8000/newsfeel/ - cria uma nova entrada.
-- **[PUT]** http://localhost:8000/newsfeel/{id}/ - atualiza as informações de uma entrada específica.
-- **[PATCH]** http://localhost:8000/newsfeel/{id}/ - atualiza parcialmente as informações de uma entrada específica.
-- **[DELETE]** http://localhost:8000/newsfeel/{id}/ - remove uma entrada específica.
+### `/post`
+- **[GET]** http://localhost:8000/post/ - lista todos os registros de `post`.
+- **[GET]** http://localhost:8000/post/{post_id}/ - lista um registro específico de `post`.
+- **[POST]** http://localhost:8000/post/add  - cria um novo registro em `post`.
+- **[PUT]** http://localhost:8000/post/{post_id}/ - altera um registro existente de `post`.
+- **[PATCH]** http://localhost:8000/post/{post_id}/ - altera parcialmente um registro existente de `post`.
+- **[DELETE]** http://localhost:8000/post/{post_id}/ - remove um registro de `post`.
 
-### /newsfeel/{news_id}/
-- **[GET]** http://localhost:8000/newsfeel/{news_id}/
-- **[PUT]** http://localhost:8000/newsfeel/{news_id}/
-- **[PATCH]** http://localhost:8000/newsfeel/{news_id}/
-- **[DELETE]** http://localhost:8000/newsfeel/{news_id}/
+### `/reactions`
+- **[GET]** http://localhost:8000/reactions/ - lista todos os registros de `reactions`.
+- **[GET]** http://localhost:8000/reactions/{reactions_id}/ - lista um registro específico de `reactions`.
+- **[POST]** http://localhost:8000/reactions/add - cria um novo registro em `reactions`.
+- **[PUT]** http://localhost:8000/reactions/{reactions_id}/ - altera um registro existente de `reactions`.
+- **[PATCH]** http://localhost:8000/reactions/{reactions_id}/ - altera parcialmente um registro existente de `reactions`.
+- **[DELETE]** http://localhost:8000/reactions/{reactions_id}/ - remove um registro de `reactions`.
 
-### /newsfeel/{user_id}/
-- **[GET]** http://localhost:8000/newsfeel/{users_id}/
-- **[PUT]** http://localhost:8000/newsfeel/{users_id}/
-- **[PATCH]** http://localhost:8000/newsfeel/{users_id}/
-- **[DELETE]** http://localhost:8000/newsfeel/{users_id}/
+### `/{post_id}/reactions/`
+- **[GET]** http://localhost:8000/{post_id}/reactions/ - lista todos os registros de `reactions` em um registro específico de `/{post_id}/`.
+- **[GET]** http://localhost:8000/{post_id}/reactions/{reactions_id}/ - lista um registro específico de `reactions`  em um registro específico de `/{post_id}/`.
+- **[POST]** http://localhost:8000/{post_id}/reactions/add - cria um novo registro em `reactions` em um registro específico de `/{post_id}/`.
+- **[PUT]** http://localhost:8000/{post_id}/reactions/{reactions_id}/ - altera um registro existente de `reactions` em um registro específico de `/{post_id}/`.
+- **[PATCH]** http://localhost:8000/{post_id}/reactions/{reactions_id}/ - altera parcialmente um registro existente de `reactions` em um registro específico de `/{post_id}/`.
+- **[DELETE]** http://localhost:8000/{post_id}/reactions/{reactions_id}/ - remove um registro de `reactions` em um registro específico de `/{post_id}/`.
 
-### /feeling *
-- **[GET]** http://localhost:8000/feelings/ - retorna todos os feelings registrados.
-- **[GET]** http://localhost:8000/feelings/{id}/ - retorna os detalhes de um feeling específico.
-- **[POST]** http://localhost:8000/feelings/ - cria um novo feeling.
-- **[PUT]** http://localhost:8000/feelings/{id}/ - atualiza as informações de um feeling específico.
-- **[PATCH]** http://localhost:8000/feelings/{id}/ - atualiza parcialmente as informações de um feeling específico.
-- **[DELETE]** http://localhost:8000/feelings/{id}/ - remove um feeling específico.
+### /post/{user_pub_id}/
+- **[GET]** http://localhost:8000/post/{user_pub_id}/
+- **[PUT]** http://localhost:8000/post/{user_pub_id}/
+- **[PATCH]** http://localhost:8000/post/{user_pub_id}/
+- **[DELETE]** http://localhost:8000/post/{user_pub_id}/
 
-### /news *
-- **[GET]** http://localhost:8000/news/ - retorna todas as news registradas.
-- **[GET]** http://localhost:8000/news/{id}/ - retorna os detalhes de uma news específica.
-- **[POST]** http://localhost:8000/news/  - cria uma nova news.
-- **[PUT]** http://localhost:8000/news/{id}/ - atualiza as informações de uma news específica.
-- **[PATCH]** http://localhost:8000/news/{id}/ - atualiza parcialmente as informações de uma news específica.
-- **[DELETE]** http://localhost:8000/news/{id}/ - remove uma news específica.
-
-### /news/{category_id}/
-- **[GET]** http://localhost:8000/news/{category_id}/ 
-- **[PUT]** http://localhost:8000/news/{category_id}/
-- **[PATCH]** http://localhost:8000/news/{category_id}/
-- **[DELETE]** http://localhost:8000/news/{category_id}/
-
-### /news/{user_pub_id}/
-- **[GET]** http://localhost:8000/news/{user_pub_id}/
-- **[PUT]** http://localhost:8000/news/{user_pub_id}/
-- **[PATCH]** http://localhost:8000/news/{user_pub_id}/
-- **[DELETE]** http://localhost:8000/news/{user_pub_id}/
-
-### /news/{project_id}/
-- **[GET]** http://localhost:8000/news/{project_id}/
-- **[PUT]** http://localhost:8000/news/{project_id}/
-- **[PATCH]** http://localhost:8000/news/{project_id}/
-- **[DELETE]** http://localhost:8000/news/{project_id}/
-- **[GET]** http://localhost:8000/news/public/
-- **[GET]** http://localhost:8000/news/tags/
-- **[GET]** http://localhost:8000/news/{id}/data_pub/ 
+### /post/{project_id}/
+- **[GET]** http://localhost:8000/post/{project_id}/
+- **[PUT]** http://localhost:8000/post/{project_id}/
+- **[PATCH]** http://localhost:8000/post/{project_id}/
+- **[DELETE]** http://localhost:8000/post/{project_id}/
+- **[GET]** http://localhost:8000/post/public/
+- **[GET]** http://localhost:8000/post/tags/
+- **[GET]** http://localhost:8000/post/{id}/data_pub/ 
 
 ### /project
 - **[GET]** http://localhost:8000/projects/ - retorna todos os projects registrados.
@@ -85,23 +67,23 @@
 - **[DELETE]** http://localhost:8000/projects/{supervisor_id}/
 
 ### /save_to_read
-- **[GET]** http://localhost:8000/save_to_read/user{id}/news{id}/
-- **[PUT]** http://localhost:8000/save_to_read{id}/user{id}/news{id}/
-- **[PATCH]** http://localhost:8000/save_to_read{id}/user{id}/news{id}/
-- **[DELETE]** http://localhost:8000/save_to_{id}/user{id}/news{id}/
+- **[GET]** http://localhost:8000/save_to_read/user{id}/post{id}/
+- **[PUT]** http://localhost:8000/save_to_read{id}/user{id}/post{id}/
+- **[PATCH]** http://localhost:8000/save_to_read{id}/user{id}/post{id}/
+- **[DELETE]** http://localhost:8000/save_to_{id}/user{id}/post{id}/
 
 ### /favorites
-- **[GET]** http://localhost:8000/favorites/user{id}/news{id}/
-- **[PUT]** http://localhost:8000/favorites{id}/user{id}/news{id}/
-- **[PATCH]** http://localhost:8000/favorites{id}/user{id}/news{id}/ 
-- **[DELETE]** http://localhost:8000/favorites{id}/user{id}/news{id}/
+- **[GET]** http://localhost:8000/favorites/user{id}/post{id}/
+- **[PUT]** http://localhost:8000/favorites{id}/user{id}/post{id}/
+- **[PATCH]** http://localhost:8000/favorites{id}/user{id}/post{id}/ 
+- **[DELETE]** http://localhost:8000/favorites{id}/user{id}/post{id}/
 
 ### /comments
-- **[GET]** http://localhost:8000/comments/news{id}/user{id}/
-- **[PUT]** http://localhost:8000/comments{id}/news{id}/user{id}/
-- **[PATCH]** http://localhost:8000/comments{id}/news{id}/user{id}/
-- **[POST]** http://localhost:8000/comments/news{id}/user{id}/
-- **[DELETE]** http://localhost:8000/comments{id}/news{id}/user{id}/
+- **[GET]** http://localhost:8000/comments/post{id}/user{id}/
+- **[PUT]** http://localhost:8000/comments{id}/post{id}/user{id}/
+- **[PATCH]** http://localhost:8000/comments{id}/post{id}/user{id}/
+- **[POST]** http://localhost:8000/comments/post{id}/user{id}/
+- **[DELETE]** http://localhost:8000/comments{id}/post{id}/user{id}/
 
 ### /user_notifications
 - **[GET]** http://localhost:8000/user_notifications/user{id}/category{id}/project{id}/
