@@ -1,8 +1,9 @@
 from django.contrib import admin
 
-from core.models import Category, Feeling, NewsFeel, User, Comments, News, UserInteractions, Favorites, Save_to_read, Project, UserProjectFollow
+from core.models import Category, Reaction, Feeling, NewsFeel, User, Comments, News, UserInteractions, Favorites, Save_to_read, Project, UserProjectFollow
 
 admin.site.register(Category)
+admin.site.register(Reaction)
 admin.site.register(Feeling)
 admin.site.register(NewsFeel)
 admin.site.register(User)
