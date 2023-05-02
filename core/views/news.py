@@ -1,4 +1,4 @@
-from rest_framework import ModelViewsSet
+from rest_framework.viewsets import ModelViewSet
 from core.models import News
 from core.serializers import NewsSerializer
 
