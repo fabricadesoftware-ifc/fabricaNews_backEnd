@@ -1,12 +1,22 @@
 from django.contrib import admin
 from django.urls import include, path
+
 from rest_framework.routers import DefaultRouter
 
-from core.views import CategoryViewSet, FeelingViewSet, NewsFeelViewSet
+from core.views import (
+    CategoryViewSet,
+    FavoritesViewSet,
+    FeelingViewSet,
+    NewsFeelViewSet,
+)
 
 router = DefaultRouter()
 router.register(r"newsfeel", NewsFeelViewSet)
 router.register(r"categories", CategoryViewSet)
+router.register(r"favorites", FavoritesViewSet)
 router.register(r"feelings", FeelingViewSet)
 
-urlpatterns = [path("admin/", admin.site.urls), path("", include(router.urls))]
+urlpatterns = [
+    path("admin/", admin.site.urls),
+    path("", include(router.urls)),
+]
