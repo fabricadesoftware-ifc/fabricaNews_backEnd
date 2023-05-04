@@ -5,4 +5,4 @@ class Category(models.Model):
     user_follow = models.JSONField(null=True, blank=True)
 
     def __str__(self):
-        return self.description
+        return f'{self.description}  {self.user_follow}'
