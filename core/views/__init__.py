@@ -1,3 +1,4 @@
+from .comments import CommentsViewSet
 from .categories import CategoryViewSet
 from .favorite import FavoritesViewSet
 from .feeling import FeelingViewSet
