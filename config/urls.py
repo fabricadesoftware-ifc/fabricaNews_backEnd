@@ -3,10 +3,21 @@ from django.urls import include, path
 
 from rest_framework.routers import DefaultRouter
 
-from core.views import Save_to_readViewSet
+
+from core.views import (
+    CategoryViewSet,
+    FavoritesViewSet,
+    FeelingViewSet,
+    NewsFeelViewSet,
+    SaveToReadViewSet,
+)
 
 router = DefaultRouter()
-router.register(r"save_to_read", Save_to_readViewSet)
+router.register(r"newsfeel", NewsFeelViewSet)
+router.register(r"categories", CategoryViewSet)
+router.register(r"favorites", FavoritesViewSet)
+router.register(r"feelings", FeelingViewSet)
+router.register(r"savetoread", SaveToReadViewSet)
 
 urlpatterns = [
     path("admin/", admin.site.urls),
