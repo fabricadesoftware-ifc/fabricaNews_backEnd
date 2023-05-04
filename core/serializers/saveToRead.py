@@ -1,5 +1,5 @@
 from rest_framework.serializers import ModelSerializer
-from core.models import Save_to_read
+from core.models import saveToRead
 
 class Save_to_readSerializer(ModelSerializer):
     class Meta:
