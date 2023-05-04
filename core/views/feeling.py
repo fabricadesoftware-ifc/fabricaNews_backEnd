@@ -4,5 +4,5 @@ from core.serializers import FeelingSerializer
 
 
 class FeelingViewSet(ModelViewSet):
-    queryset = Feeling.objects.all()
+    queryset = Feeling.objects.all()  # pylint: disable=E1101
     serializer_class = FeelingSerializer
