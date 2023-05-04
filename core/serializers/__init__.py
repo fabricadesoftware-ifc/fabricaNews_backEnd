@@ -1,4 +1,4 @@
-from .user_project_follow import UserProjectFollowSerializer
+from .userProjectFollow import UserProjectFollowSerializer
 from .comments import CommentsSerializer
 from .saveToRead import SaveToReadSerializer
 from .categories import CategorySerializer
