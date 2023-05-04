@@ -3,5 +3,5 @@ from core.models import saveToRead
 
 class Save_to_readSerializer(ModelSerializer):
     class Meta:
-        model = Save_to_read
+        model = saveToRead
         fields = "__all__"
