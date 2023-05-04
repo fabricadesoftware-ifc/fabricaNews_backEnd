@@ -2,11 +2,11 @@ from .category import Category
 from .feeling import Feeling
 from .user import User
 from .news import News
-from .news_feel import NewsFeel
+from .newsFeel import NewsFeel
 from .news import News
 from .comments import Comments
 from .project import Project
-from .user_interactions import UserInteractions
+from .userInteractions import UserInteractions
 from .favorites import Favorites
 from .saveToRead import SaveToRead
-from .user_project_follow import UserProjectFollow
+from .userProjectFollow import UserProjectFollow

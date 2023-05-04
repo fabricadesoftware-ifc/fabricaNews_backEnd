@@ -6,7 +6,7 @@ from core.views import UserProjectFollowViewSet, FeelingViewSet, NewsViewSet
 
 router = DefaultRouter()
 router.register(r"feelings", FeelingViewSet)
-router.register(r"user_project_follows", UserProjectFollowViewSet)
+router.register(r"userProjectFollows", UserProjectFollowViewSet)
 
 urlpatterns = [
     path("admin/", admin.site.urls),
