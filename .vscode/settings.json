@@ -1,12 +1,13 @@
 {
+  "python.linting.pylintEnabled": true,
+  "python.linting.enabled": true,
   "python.analysis.extraPaths": [
     "${workspaceFolder}/__pypackages__/3.10/lib"
   ],
   "python.autoComplete.extraPaths": [
     "${workspaceFolder}/__pypackages__/3.10/lib"
   ],
-  "[python]": {
-    "editor.defaultFormatter": "ms-python.autopep8"
-  },
-  "python.formatting.provider": "none"
+  "python.formatting.provider": "black",
+  "python.linting.pylintPath": "${workspaceFolder}/__pypackages__/3.10/bin/pylint",
+  "python.formatting.blackPath": "${workspaceFolder}/__pypackages__/3.10/bin/black",
 }
