@@ -35,6 +35,21 @@ version = "2023.3"
 summary = "World timezone definitions, modern and historical"
 
 [[package]]
+name = "djangorestframework"
+version = "3.14.0"
+requires_python = ">=3.6"
+summary = "Web APIs for Django, made easy."
+dependencies = [
+    "django>=3.0",
+    "pytz",
+]
+
+[[package]]
+name = "pytz"
+version = "2023.3"
+summary = "World timezone definitions, modern and historical"
+
+[[package]]
 name = "sqlparse"
 version = "0.4.3"
 requires_python = ">=3.5"
@@ -47,9 +62,8 @@ requires_python = ">=2"
 summary = "Provider of IANA time zone data"
 
 [metadata]
-lock_version = "4.2"
-groups = ["default"]
-content_hash = "sha256:e58e533d7abd39eeaec738ba4bd78d866f62e8b7e87086e66345d548e3003ae2"
+lock_version = "4.1"
+content_hash = "sha256:28492c05cc6a2447f9ca08ef08757334b0be788e43eeff7eb30a393d452fc95f"
 
 [metadata.files]
 "asgiref 3.6.0" = [
