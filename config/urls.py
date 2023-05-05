@@ -12,6 +12,7 @@ from core.views import (
     SaveToReadViewSet,
     CommentsViewSet,
     UserProjectFollowViewSet,
+    ReactionViewSet
 )
 
 router = DefaultRouter()
@@ -22,6 +23,7 @@ router.register(r"feelings", FeelingViewSet)
 router.register(r"news", NewsViewSet)
 router.register(r"userProjectFollows", UserProjectFollowViewSet)
 router.register(r"savetoread", SaveToReadViewSet)
+router.register(r"reactions", ReactionViewSet)
 router.register(r"comments", CommentsViewSet)
 
 urlpatterns = [
