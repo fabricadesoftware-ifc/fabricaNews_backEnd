@@ -6,7 +6,7 @@ authors = [
     {name = "Fabrica de Software", email = "fabrica@fabricadesoftware.ifc.edu.br"},
 ]
 dependencies = [
-    "django>=4.2",
+    "django>=4.2.1",
     "djangorestframework>=3.14.0",
 ]
 requires-python = ">=3.10"

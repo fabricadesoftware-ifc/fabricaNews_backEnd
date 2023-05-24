@@ -177,7 +177,7 @@ summary = "Module for decorators, wrappers and monkey patching."
 
 [metadata]
 lock_version = "4.1"
-content_hash = "sha256:e7d28e64be6d48c75d272328d8d96b3d32f945402357f4d27f99cbd3beb68e2e"
+content_hash = "sha256:07adc449b4721ce54c03170d3810e2043465826ada075936f377a0d2a3a1fa47"
 
 [metadata.files]
 "asgiref 3.6.0" = [
