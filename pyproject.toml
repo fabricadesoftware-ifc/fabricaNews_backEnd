@@ -1,17 +1,14 @@
 [project]
-name = "fabricaNews_backEnd"
-version = "0.1.0"
+name = ""
+version = ""
 description = ""
 authors = [
-    {name = "Fabrica de Software", email = "fabrica@fabricadesoftware.ifc.edu.br"},
+    {name = "", email = ""},
 ]
 dependencies = [
-    "django>=4.2",
-    "djangorestframework>=3.14.0",
-    "django-environ>=0.10.0",
+    "django>=4.2.2",
 ]
 requires-python = ">=3.10"
-readme = "README.md"
 license = {text = "MIT"}
 
 [tool.pdm]
