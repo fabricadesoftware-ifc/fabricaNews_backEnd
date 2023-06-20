@@ -4,15 +4,18 @@ from core.models import (
     Category,
     Feeling,
     NewsFeel,
-    User,
     Comments,
     News,
-    UserInteractions,
     Favorites,
     Reaction,
     SaveToRead,
-    Project,
+)
+
+from user.models import (
+    User,
+    UserInteractions,
     UserProjectFollow,
+    Project,
 )
 
 admin.site.register(Category)

@@ -1,6 +1,6 @@
 from django.db import models
-from .user import User
-from .project import Project
+from user.models import User
+from user.models import Project
 
 class UserProjectFollow(models.Model):
     user = models.ForeignKey(User, on_delete=models.PROTECT, related_name="user_project_follows")
@@ -8,3 +8,4 @@ class UserProjectFollow(models.Model):
 
     def __str__(self):
         return self.user
+    

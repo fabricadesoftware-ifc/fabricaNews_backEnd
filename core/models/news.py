@@ -1,7 +1,7 @@
 from django.db import models
 from .category import Category
-from .project import Project
-from .user import User
+from user.models import Project
+from user.models import User
 
 
 class News(models.Model):
