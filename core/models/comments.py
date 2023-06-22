@@ -1,5 +1,5 @@
 from django.db import models
-from .user import User
+from user.models.user import User
 from .news import News
 
 

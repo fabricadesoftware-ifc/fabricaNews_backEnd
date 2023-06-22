@@ -11,8 +11,11 @@ from core.views import (
     NewsFeelViewSet,
     SaveToReadViewSet,
     CommentsViewSet,
-    UserProjectFollowViewSet,
     ReactionViewSet
+)
+
+from user.views import (
+    UserProjectFollowViewSet,
 )
 
 router = DefaultRouter()
