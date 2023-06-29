@@ -166,6 +166,7 @@ cross_platform = true
 groups = ["default", "dev"]
 content_hash = "sha256:f94f561d0764a093259307e7def6eb1d03048820af7f3997e4bc8ed85f618814"
 
+
 [metadata.files]
 "asgiref 3.6.0" = [
     {url = "https://files.pythonhosted.org/packages/78/2d/797c0537426266d6c9377a2ed6a4ac61e50c2d5b1ab4da101a4b9bfe26e2/asgiref-3.6.0.tar.gz", hash = "sha256:9567dfe7bd8d3c8c892227827c41cce860b368104c3431da67a0c5a65a949506"},
