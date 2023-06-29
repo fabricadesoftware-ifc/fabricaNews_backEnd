@@ -1,6 +1,6 @@
 from django.db import models
 from .category import Category
-from .project import Project
+from project.models.project import Project
 from user.models import User
 
 
