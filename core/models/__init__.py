@@ -7,6 +7,3 @@ from .newsFeel import NewsFeel
 from .project import Project
 from .reaction import Reaction
 from .saveToRead import SaveToRead
-from .user import User
-from .userInteractions import UserInteractions
-from .userProjectFollow import UserProjectFollow

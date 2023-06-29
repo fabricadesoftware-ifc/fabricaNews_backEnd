@@ -1,6 +1,6 @@
 from rest_framework.viewsets import ModelViewSet
-from core.models import UserProjectFollow
-from core.serializers import UserProjectFollowSerializer
+from user.models import UserProjectFollow
+from user.serializers.userProjectFollow import UserProjectFollowSerializer
 
 
 class UserProjectFollowViewSet(ModelViewSet):

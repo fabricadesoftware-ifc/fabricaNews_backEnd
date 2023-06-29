@@ -1,4 +1,3 @@
-from .userProjectFollow import UserProjectFollowSerializer
 from .comments import CommentsSerializer
 from .reaction import ReactionSerializer
 from .saveToRead import SaveToReadSerializer
