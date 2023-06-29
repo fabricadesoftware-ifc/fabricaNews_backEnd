@@ -182,7 +182,9 @@ requires_python = "!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*,!=3.4.*,>=2.7"
 summary = "Module for decorators, wrappers and monkey patching."
 
 [metadata]
-lock_version = "4.1"
+lock_version = "4.2"
+cross_platform = true
+groups = ["default", "dev"]
 content_hash = "sha256:775f11d0c82e5abf403d33b5c2d9c4dec934deae1725e5a066aed2438826dcb0"
 
 [metadata.files]
