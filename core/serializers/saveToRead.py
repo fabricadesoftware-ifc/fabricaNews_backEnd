@@ -1,7 +1,7 @@
 from rest_framework.serializers import ModelSerializer
-from core.models import saveToRead
+from core.models import SaveToRead
 
 class SaveToReadSerializer(ModelSerializer):
     class Meta:
-        model = saveToRead
+        model = SaveToRead
         fields = "__all__"
