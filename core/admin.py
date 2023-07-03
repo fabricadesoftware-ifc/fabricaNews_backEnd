@@ -9,13 +9,16 @@ from core.models import (
     Favorites,
     Reaction,
     SaveToRead,
-    Project,
 )
 
 from user.models import (
     User,
     UserInteractions,
     UserProjectFollow,
+)
+
+from project.models import (
+    Project,
 )
 
 admin.site.register(Category)

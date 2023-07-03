@@ -1,6 +1,6 @@
 from django.db import models
 from user.models.user import User
-from core.models.project import Project
+from project.models.project import Project
 
 
 class UserInteractions(models.Model):
