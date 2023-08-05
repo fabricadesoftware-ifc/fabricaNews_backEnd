@@ -5,35 +5,56 @@ import django.db.models.deletion
 
 
 class Migration(migrations.Migration):
-
     dependencies = [
-        ('core', '0003_merge_0002_feeling_0002_user'),
+        ("core", "0003_merge_0002_feeling_0002_user"),
     ]
 
     operations = [
         migrations.AlterField(
-            model_name='category',
-            name='description',
-            field=models.CharField(blank='False', max_length=50, null='False'),
+            model_name="category",
+            name="description",
+            field=models.CharField(blank="False", max_length=50, null="False"),
         ),
         migrations.CreateModel(
-            name='News',
+            name="News",
             fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('title', models.CharField(max_length=200)),
-                ('text', models.CharField(max_length=5000)),
-                ('date_pub', models.DateField()),
-                ('public', models.BooleanField()),
-                ('tags', models.JSONField()),
-                ('revision_date', models.DateTimeField()),
-                ('status', models.CharField(max_length=20)),
-                ('needs_revision', models.BooleanField()),
-                ('needs_approval', models.BooleanField()),
-                ('relevance', models.IntegerField()),
-                ('accuracy', models.IntegerField()),
-                ('update_date', models.DateTimeField()),
-                ('category_id', models.ForeignKey(on_delete=django.db.models.deletion.PROTECT, related_name='News', to='core.category')),
-                ('user_pub_id', models.ForeignKey(on_delete=django.db.models.deletion.PROTECT, related_name='News', to='core.user')),
+                (
+                    "id",
+                    models.BigAutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name="ID",
+                    ),
+                ),
+                ("title", models.CharField(max_length=200)),
+                ("text", models.CharField(max_length=5000)),
+                ("date_pub", models.DateField()),
+                ("public", models.BooleanField()),
+                ("tags", models.JSONField()),
+                ("revision_date", models.DateTimeField()),
+                ("status", models.CharField(max_length=20)),
+                ("needs_revision", models.BooleanField()),
+                ("needs_approval", models.BooleanField()),
+                ("relevance", models.IntegerField()),
+                ("accuracy", models.IntegerField()),
+                ("update_date", models.DateTimeField()),
+                (
+                    "category_id",
+                    models.ForeignKey(
+                        on_delete=django.db.models.deletion.PROTECT,
+                        related_name="News",
+                        to="core.category",
+                    ),
+                ),
+                (
+                    "user_pub_id",
+                    models.ForeignKey(
+                        on_delete=django.db.models.deletion.PROTECT,
+                        related_name="News",
+                        to="core.user",
+                    ),
+                ),
             ],
         ),
     ]

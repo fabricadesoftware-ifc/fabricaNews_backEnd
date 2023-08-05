@@ -6,3 +6,4 @@ from .favorite import FavoritesSerializer
 from .feeling import FeelingSerializer
 from .news import NewsSerializer
 from .newsFeel import NewsFeelSerializer
+from .help import HelpSerializer

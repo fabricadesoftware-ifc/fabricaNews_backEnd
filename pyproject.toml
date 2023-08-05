@@ -6,9 +6,10 @@ authors = [
     {name = "", email = ""},
 ]
 dependencies = [
-    "django>=4.2.2",
+    "django>=4.2.4",
     "djangorestframework>=3.14.0",
     "django-environ>=0.10.0",
+    "django-cors-headers>=4.2.0",
 ]
 requires-python = ">=3.10"
 license = {text = "MIT"}

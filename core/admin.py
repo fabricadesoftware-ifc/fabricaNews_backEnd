@@ -9,6 +9,7 @@ from core.models import (
     Favorites,
     Reaction,
     SaveToRead,
+    Help,
 )
 
 from user.models import (
@@ -33,3 +34,4 @@ admin.site.register(Reaction)
 admin.site.register(SaveToRead)
 admin.site.register(Project)
 admin.site.register(UserProjectFollow)
+admin.site.register(Help)

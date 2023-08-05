@@ -6,3 +6,4 @@ from .news import NewsViewSet
 from .newsFeel import NewsFeelViewSet
 from .reaction import ReactionViewSet
 from .saveToRead import SaveToReadViewSet
+from .help import HelpViewSet

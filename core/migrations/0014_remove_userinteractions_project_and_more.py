@@ -4,26 +4,25 @@ from django.db import migrations
 
 
 class Migration(migrations.Migration):
-
     dependencies = [
-        ('core', '0013_savetoread_remove_reaction_news_remove_reaction_user_and_more'),
+        ("core", "0013_savetoread_remove_reaction_news_remove_reaction_user_and_more"),
     ]
 
     operations = [
         migrations.RemoveField(
-            model_name='userinteractions',
-            name='project',
+            model_name="userinteractions",
+            name="project",
         ),
         migrations.RemoveField(
-            model_name='userinteractions',
-            name='user',
+            model_name="userinteractions",
+            name="user",
         ),
         migrations.RemoveField(
-            model_name='userprojectfollow',
-            name='project',
+            model_name="userprojectfollow",
+            name="project",
         ),
         migrations.RemoveField(
-            model_name='userprojectfollow',
-            name='user',
+            model_name="userprojectfollow",
+            name="user",
         ),
     ]

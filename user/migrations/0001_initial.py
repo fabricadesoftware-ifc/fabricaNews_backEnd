@@ -5,39 +5,90 @@ import django.db.models.deletion
 
 
 class Migration(migrations.Migration):
-
     initial = True
 
     dependencies = [
-        ('core', '0014_remove_userinteractions_project_and_more'),
+        ("core", "0014_remove_userinteractions_project_and_more"),
     ]
 
     operations = [
         migrations.CreateModel(
-            name='User',
+            name="User",
             fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('name', models.CharField(max_length=100)),
+                (
+                    "id",
+                    models.BigAutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name="ID",
+                    ),
+                ),
+                ("name", models.CharField(max_length=100)),
             ],
         ),
         migrations.CreateModel(
-            name='UserProjectFollow',
+            name="UserProjectFollow",
             fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('project', models.ForeignKey(on_delete=django.db.models.deletion.PROTECT, related_name='user_project_follows', to='core.project')),
-                ('user', models.ForeignKey(on_delete=django.db.models.deletion.PROTECT, related_name='user_project_follows', to='user.user')),
+                (
+                    "id",
+                    models.BigAutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name="ID",
+                    ),
+                ),
+                (
+                    "project",
+                    models.ForeignKey(
+                        on_delete=django.db.models.deletion.PROTECT,
+                        related_name="user_project_follows",
+                        to="core.project",
+                    ),
+                ),
+                (
+                    "user",
+                    models.ForeignKey(
+                        on_delete=django.db.models.deletion.PROTECT,
+                        related_name="user_project_follows",
+                        to="user.user",
+                    ),
+                ),
             ],
         ),
         migrations.CreateModel(
-            name='UserInteractions',
+            name="UserInteractions",
             fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('interaction_type', models.CharField(max_length=20)),
-                ('interaction_time', models.DateTimeField(auto_now_add=True)),
-                ('has_notification', models.BooleanField(default=False)),
-                ('created_at', models.DateTimeField(auto_now_add=True)),
-                ('project', models.ForeignKey(on_delete=django.db.models.deletion.PROTECT, related_name='UserInteractions', to='core.project')),
-                ('user', models.ForeignKey(on_delete=django.db.models.deletion.PROTECT, related_name='UserInteractions', to='user.user')),
+                (
+                    "id",
+                    models.BigAutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name="ID",
+                    ),
+                ),
+                ("interaction_type", models.CharField(max_length=20)),
+                ("interaction_time", models.DateTimeField(auto_now_add=True)),
+                ("has_notification", models.BooleanField(default=False)),
+                ("created_at", models.DateTimeField(auto_now_add=True)),
+                (
+                    "project",
+                    models.ForeignKey(
+                        on_delete=django.db.models.deletion.PROTECT,
+                        related_name="UserInteractions",
+                        to="core.project",
+                    ),
+                ),
+                (
+                    "user",
+                    models.ForeignKey(
+                        on_delete=django.db.models.deletion.PROTECT,
+                        related_name="UserInteractions",
+                        to="user.user",
+                    ),
+                ),
             ],
         ),
     ]

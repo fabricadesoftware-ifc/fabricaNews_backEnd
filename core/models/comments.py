@@ -3,7 +3,6 @@ from user.models.user import User
 from .news import News
 
 
-
 class Comments(models.Model):
     comment = models.CharField(max_length=5000, null=False, blank=False)
     date = models.DateTimeField(auto_now_add=True)

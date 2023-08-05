@@ -4,20 +4,19 @@ from django.db import migrations, models
 
 
 class Migration(migrations.Migration):
-
     dependencies = [
-        ('core', '0010_rename_news_id_favorites_news_and_more'),
+        ("core", "0010_rename_news_id_favorites_news_and_more"),
     ]
 
     operations = [
         migrations.AddField(
-            model_name='category',
-            name='user_follow',
+            model_name="category",
+            name="user_follow",
             field=models.JSONField(blank=True, null=True),
         ),
         migrations.AlterField(
-            model_name='category',
-            name='description',
+            model_name="category",
+            name="description",
             field=models.CharField(default=0, max_length=50),
             preserve_default=False,
         ),

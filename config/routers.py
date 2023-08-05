@@ -8,10 +8,11 @@ from core.views import (
     NewsFeelViewSet,
     SaveToReadViewSet,
     CommentsViewSet,
-    ReactionViewSet
+    ReactionViewSet,
+    HelpViewSet,
 )
 
-from user.views import(
+from user.views import (
     UserProjectFollowViewSet,
 )
 
@@ -25,3 +26,4 @@ router.register(r"userProjectFollows", UserProjectFollowViewSet)
 router.register(r"savetoread", SaveToReadViewSet)
 router.register(r"reactions", ReactionViewSet)
 router.register(r"comments", CommentsViewSet)
+router.register(r"helps", HelpViewSet)
