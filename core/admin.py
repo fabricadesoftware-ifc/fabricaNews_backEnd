@@ -2,25 +2,17 @@ from django.contrib import admin
 
 from core.models import (
     Category,
-    Feeling,
-    NewsFeel,
     Comments,
-    News,
     Favorites,
+    Feeling,
+    Help,
+    News,
+    NewsFeel,
     Reaction,
     SaveToRead,
-    Help,
 )
-
-from user.models import (
-    User,
-    UserInteractions,
-    UserProjectFollow,
-)
-
-from project.models import (
-    Project,
-)
+from project.models import Project
+from user.models import User, UserInteractions, UserProjectFollow
 
 admin.site.register(Category)
 admin.site.register(Feeling)

@@ -2,19 +2,16 @@ from rest_framework.routers import DefaultRouter
 
 from core.views import (
     CategoryViewSet,
+    CommentsViewSet,
     FavoritesViewSet,
     FeelingViewSet,
-    NewsViewSet,
-    NewsFeelViewSet,
-    SaveToReadViewSet,
-    CommentsViewSet,
-    ReactionViewSet,
     HelpViewSet,
+    NewsFeelViewSet,
+    NewsViewSet,
+    ReactionViewSet,
+    SaveToReadViewSet,
 )
-
-from user.views import (
-    UserProjectFollowViewSet,
-)
+from user.views import UserProjectFollowViewSet
 
 router = DefaultRouter()
 router.register(r"newsfeel", NewsFeelViewSet)

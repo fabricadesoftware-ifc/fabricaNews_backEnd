@@ -2,30 +2,39 @@
 name = ""
 version = ""
 description = ""
-authors = [
-    {name = "", email = ""},
-]
+authors = [{ name = "", email = "" }]
 dependencies = [
     "django>=4.2.4",
     "djangorestframework>=3.14.0",
     "django-environ>=0.10.0",
     "django-cors-headers>=4.2.0",
+    "python-magic>=0.4.27",
+    "pillow>=10.0.0",
+    "dotenv>=0.0.5",
+    "python-dotenv>=1.0.0",
 ]
 requires-python = ">=3.10"
-license = {text = "MIT"}
+license = { text = "MIT" }
+
+[tool.black]
+line-length = 120
 
 [tool.pdm]
 [tool.pdm.dev-dependencies]
-dev = [
-    "pylint>=2.13.9",
-    "black>=22.3.0",
-]
-[tool.pdm.scripts]
-manage = "python ./manage.py"
-server = "python ./manage.py runserver"
-makemigrations = "python ./manage.py makemigrations"
-migrate = "python ./manage.py migrate"
+dev = ["pylint>=2.13.9", "black>=23.7.0", "isort>=5.12.0"]
 
 [build-system]
 requires = ["pdm-pep517>=1.0"]
 build-backend = "pdm.pep517.api"
+
+[tool.pdm.scripts]
+dumpdata = "python manage.py dumpdata {args}"
+dev = "python manage.py runserver"
+runserver = "python manage.py runserver"
+createsuperuser = "python manage.py createsuperuser"
+migrate = "python manage.py migrate"
+makemigrations = "python manage.py makemigrations"
+shell = "python manage.py shell"
+test = "python manage.py test"
+startapp = "python manage.py startapp {args}"
+loaddata = "python manage.py loaddata {args}"
