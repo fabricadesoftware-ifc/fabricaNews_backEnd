@@ -1,4 +1,5 @@
 from rest_framework.viewsets import ModelViewSet
+
 from core.models import Favorites
 from core.serializers import FavoritesSerializer
 

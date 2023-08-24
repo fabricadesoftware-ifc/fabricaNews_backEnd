@@ -1,6 +1,7 @@
 from django.db import models
-from user.models.user import User
+
 from project.models.project import Project
+from user.models.user import User
 
 
 class UserProjectFollow(models.Model):
