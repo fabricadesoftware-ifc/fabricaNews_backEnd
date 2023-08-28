@@ -1,4 +1,5 @@
 from rest_framework.viewsets import ModelViewSet
+
 from core.models import Feeling
 from core.serializers import FeelingSerializer
 
