@@ -61,6 +61,7 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     "uploader",
     "corsheaders",
+    "rest_framework_simplejwt", 
     "rest_framework",
     "core",
     "user",
@@ -105,7 +106,6 @@ TEMPLATES = [
 REST_FRAMEWORK = {
     "DEFAULT_PERMISSION_CLASSES": [
         "rest_framework.permissions.IsAuthenticated",
-        "rest_framework_simplejwt.authentication.JWTAuthentication",
     ],
     "DEFAULT_AUTHENTICATION_CLASSES": [
         "rest_framework_simplejwt.authentication.JWTAuthentication",
