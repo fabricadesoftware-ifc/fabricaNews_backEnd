@@ -1,15 +1,14 @@
 from django.db import models
 
 from project.models.project import Project
+from uploader.models import Image
 from user.models import User
 
 from .category import Category
 
 
 class News(models.Model):
-    category = models.ForeignKey(
-        Category, on_delete=models.PROTECT, related_name="News"
-    )
+    category = models.ForeignKey(Category, on_delete=models.PROTECT, related_name="News")
     title = models.CharField(max_length=200, null=False, blank=False)
     text = models.CharField(max_length=5000, null=False, blank=False)
     date_pub = models.DateField(null=False, blank=False)
@@ -24,6 +23,13 @@ class News(models.Model):
     relevance = models.IntegerField(null=False, blank=False)
     accuracy = models.IntegerField(null=False, blank=False)
     update_date = models.DateTimeField(null=False, blank=False)
+    imageNew = models.ManyToManyField(
+        Image,
+        related_name="+",
+        null=True,
+        blank=True,
+        default=None,
+    )
 
     def __str__(self):
         return f"{self.title}"

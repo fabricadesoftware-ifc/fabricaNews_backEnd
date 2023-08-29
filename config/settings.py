@@ -10,6 +10,17 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.2/ref/settings/
 """
 import os
+
+from dotenv import load_dotenv
+
+# Carregar variáveis de ambiente do arquivo .env
+load_dotenv()
+
+MODE = os.getenv("MODE")
+
+SECRET_KEY = os.getenv("SECRET_KEY")
+DEBUG = os.getenv("DEBUG", "False")
+CSRF_TRUSTED_ORIGINS = ["http://localhost:3000", "http://localhost:8000", "https://*.fl0.io/"]
 from pathlib import Path
 
 import environ
@@ -34,8 +45,10 @@ environ.Env.read_env((os.path.join(BASE_DIR, ".env")))
 
 SECRET_KEY = env("SECRET_KEY")
 DEBUG = env("DEBUG")
-# ALLOWED_HOSTS = env("ALLOWED_HOSTS").split(",")
-# DATABASES = {"default": env.db()}
+
+ALLOWED_HOSTS = env("ALLOWED_HOSTS").split(",")
+DATABASES = {"default": env.db()}
+
 
 # Application definition
 
@@ -46,6 +59,7 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+    "uploader",
     "corsheaders",
     "rest_framework",
     "core",
@@ -63,6 +77,12 @@ MIDDLEWARE = [
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
 ]
+
+# App Uploader settings
+MEDIA_URL = "http://localhost:8000/media/"
+MEDIA_ENDPOINT = "/media/"
+MEDIA_ROOT = os.path.join(BASE_DIR, "media/")
+FILE_UPLOAD_PERMISSIONS = 0o640
 
 ROOT_URLCONF = "config.urls"
 

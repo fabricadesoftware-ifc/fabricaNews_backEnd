@@ -24,15 +24,11 @@ class Migration(migrations.Migration):
                 ),
                 (
                     "news_id",
-                    models.ForeignKey(
-                        on_delete=django.db.models.deletion.PROTECT, to="core.news"
-                    ),
+                    models.ForeignKey(on_delete=django.db.models.deletion.PROTECT, to="core.news"),
                 ),
                 (
                     "user_id",
-                    models.ForeignKey(
-                        on_delete=django.db.models.deletion.PROTECT, to="core.user"
-                    ),
+                    models.ForeignKey(on_delete=django.db.models.deletion.PROTECT, to="core.user"),
                 ),
             ],
         ),

@@ -5,12 +5,8 @@ from user.models.user import User
 
 
 class UserInteractions(models.Model):
-    user = models.ForeignKey(
-        User, on_delete=models.PROTECT, related_name="UserInteractions"
-    )
-    project = models.ForeignKey(
-        Project, on_delete=models.PROTECT, related_name="UserInteractions"
-    )
+    user = models.ForeignKey(User, on_delete=models.PROTECT, related_name="UserInteractions")
+    project = models.ForeignKey(Project, on_delete=models.PROTECT, related_name="UserInteractions")
     interaction_type = models.CharField(max_length=20, null=False, blank=False)
     interaction_time = models.DateTimeField(auto_now_add=True, null=False, blank=False)
     has_notification = models.BooleanField(default=False, null=False, blank=False)
