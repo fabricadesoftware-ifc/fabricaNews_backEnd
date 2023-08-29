@@ -1,5 +1,4 @@
 from rest_framework.serializers import ModelSerializer, SlugRelatedField
-
 from core.models import News
 from uploader.models import Image
 from uploader.serializers import ImageSerializer
